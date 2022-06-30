@@ -1,0 +1,115 @@
+body {										
+    background:url('http://www.ultradrive.com/images/rdx_starfield.jpg');
+}
+ul{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+}
+li{
+    list-style-type: none;
+    padding: 10px;
+}
+li:first-child{
+    margin-top: 15px;
+}
+.content img{
+    width: 350px;
+    height: 400px;
+    margin: 15px 40px 15px 15px;
+    border: 0.5px solid #FCDE2B;
+}
+.wrapper{
+    font-family: "Franklin Gothic Book", sans-serif;
+}
+.header-display{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 0px;
+}
+.logo-img{
+    margin: 15px 0px;
+    height: 100px;
+    width: auto;
+}
+.menu-btn{
+    color: #FCDE2B;
+    background-color: #000;
+    border: 3px solid #FCDE2B;
+    font-size: 28px;
+    transition: background-color 0.5s ease 0s;
+    cursor: pointer;
+}
+.menu-btn:hover{
+    color: #000;
+    background-color: #FCDE2B;
+}
+
+.content{
+    display: flex;
+    border: 1px solid #FCDE2B;
+    margin-bottom: 5px;
+}
+
+.main-content{
+    margin-top: 50px;
+}
+
+.main-text{
+    color: #FCDE2B;
+    font-size: 19px;
+    letter-spacing: 1px;
+    text-align: center;
+}
+
+.page-buttons{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 25px;
+}
+.page-btn{
+    color: #FCDE2B;
+    background-color: #000;
+    border: 3px solid #FCDE2B;
+    font-size: 15px;
+    transition: background-color 0.5s ease 0s;
+    cursor: pointer;
+}
+.page-btn:hover{
+    color: #000;
+    background-color: #FCDE2B;
+}
+
+.lds-hourglass {
+    display: inline-block;
+    position: relative;
+    width: 80px;
+    height: 80px;
+}
+.lds-hourglass:after {
+    content: " ";
+    display: block;
+    border-radius: 50%;
+    width: 0;
+    height: 0;
+    margin: 8px;
+    box-sizing: border-box;
+    border: 32px solid #FCDE2B;
+    border-color: #FCDE2B transparent #FCDE2B transparent;
+    animation: lds-hourglass 1.2s infinite;
+}
+@keyframes lds-hourglass {
+    0% {
+    transform: rotate(0);
+    animation-timing-function: cubic-bezier(0.55, 0.055, 0.675, 0.19);
+    }
+    50% {
+    transform: rotate(900deg);
+    animation-timing-function: cubic-bezier(0.215, 0.61, 0.355, 1);
+    }
+    100% {
+    transform: rotate(1800deg);
+    }
+}
